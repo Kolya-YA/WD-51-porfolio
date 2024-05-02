@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Nikolay Kolomyytsev</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Nikolay Kolomyytsev — portfolic</title>
 </head>
-<body>
-    <header class="header">
-        <div class="header__top">
-            <a href="#">To top</a>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Porfolio</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__bottom">
-            <h1>Nikoaly Kolomyytsev</h1>
-            <p>Web-developer</p>
-        </div>
+
+<body class="antialiased">
+    <nav class="header__top sticky top-0 flex flex-wrap gap-4 justify-between items-baseline px-4 py-2 bg-gray-200">
+        <a href="#" class="hover:text-violet-700 transition p-2">To
+            top</a>
+            <ul class="flex gap-2">
+                <li>
+                    <a href="#about"
+                       class="hover:text-violet-700 transition p-2">
+                       About
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills"
+                       class="hover:text-violet-700 transition p-2">
+                       Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio"
+                       class="hover:text-violet-700 transition p-2">
+                       Porfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacts"
+                       class="hover:text-violet-700 transition p-2">
+                       Contacts
+                    </a>
+                </li>
+            </ul>
+    </nav>
+    <header class="p-4 bg-gray-800"">
+        <h1 class="text-4xl font-bold text-violet-100">
+            Nikoaly Kolomyytsev</h1>
+        <p class="text-2xl text-violet-100">Web-developer</p>
     </header>
+
     <main class="main">
-        <section class="main__about">
-            <div class="wrapper about">
-                <div class="about__main">
+        <section class="main__about" id="about">
+            <div class="wrapper about flex flex-col md:flex-row-reverse gap-4 p-4">
+                <div class="about__main flex-2">
                     <h2>My name</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sapiente adipisci culpa. Molestiae harum dolor ea doloribus temporibus officiis iste neque, quidem saepe velit repudiandae vel autem sint nihil omnis repellat totam dolorem ducimus eos facilis corrupti. Placeat reprehenderit magnam ratione laudantium doloribus laborum iste officia deleniti ipsum sit. Rem impedit pariatur vero aut ipsam praesentium ducimus, molestias eaque, quaerat reprehenderit doloribus. Ipsam repudiandae autem sequi illo aperiam maxime commodi, voluptatem fugiat accusantium et aliquam veniam quas, praesentium rerum impedit voluptas tenetur minus, debitis adipisci pariatur placeat ipsum cupiditate beatae nemo. Perspiciatis, rem? Blanditiis voluptatem error saepe a suscipit, delectus perferendis tempora aut culpa deleniti deserunt sit ullam ab magnam. Dolorem, laudantium. Ut, facilis velit repudiandae esse sint explicabo itaque?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quis sapiente adipisci culpa.
+                        Molestiae harum dolor ea doloribus temporibus
+                        officiis iste neque, quidem saepe velit
+                        repudiandae vel autem sint nihil omnis repellat
+                        totam dolorem ducimus eos facilis corrupti.
+                        Placeat reprehenderit magnam ratione laudantium
+                        doloribus laborum iste officia deleniti ipsum
+                        sit. Rem impedit pariatur vero aut ipsam
+                        praesentium ducimus, molestias eaque, quaerat
+                        reprehenderit doloribus. Ipsam repudiandae autem
+                        sequi illo aperiam maxime commodi, voluptatem
+                        fugiat accusantium et aliquam veniam quas,
+                        praesentium rerum impedit voluptas tenetur
+                        minus, debitis adipisci pariatur placeat ipsum
+                        cupiditate beatae nemo. Perspiciatis, rem?
+                        Blanditiis voluptatem error saepe a suscipit,
+                        delectus perferendis tempora aut culpa deleniti
+                        deserunt sit ullam ab magnam. Dolorem,
+                        laudantium. Ut, facilis velit repudiandae esse
+                        sint explicabo itaque?</p>
                 </div>
-                <div class="about__aside">
+                <div class="about__aside flex-1">
                     <figure>
-                        <img src="" alt="Portrait">
+                        <img src="oficial photo" alt="Portrait">
                         <ul>
                             <li>Occupation</li>
                             <li>Location</li>
@@ -43,7 +85,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__skills">
+        <section class="main__skills" id="skills">
             <div class="wrapper skills">
                 <h2>Skills</h2>
                 <ul class="skills__list">
@@ -62,30 +104,35 @@
                 </ul>
             </div>
         </section>
-        <section class="main__projects">
+        <section class="main__projects" id="portfolio">
             <h2>My projects</h2>
             <ul class="projects__list">
                 <li>
-                    <div class="wrapper projects__item">Project #001</div>
+                    <div class="wrapper projects__item">Project #001
+                    </div>
                 </li>
                 <li>
-                    <div class="wrapper projects__item">Project #002</div>
+                    <div class="wrapper projects__item">Project #002
+                    </div>
                 </li>
                 <li>
-                    <div class="wrapper projects__item">Project #003</div>
+                    <div class="wrapper projects__item">Project #003
+                    </div>
                 </li>
                 <li>
-                    <div class="wrapper projects__item">Project #004</div>
+                    <div class="wrapper projects__item">Project #004
+                    </div>
                 </li>
                 <li>
-                    <div class="wrapper projects__item">Project #005</div>
+                    <div class="wrapper projects__item">Project #005
+                    </div>
                 </li>
             </ul>
         </section>
     </main>
     <footer class="footer">
 
-        <h2>My contacts</h2>
+        <h2 id="contacts">My contacts</h2>
         <h3>Nikolay Kolomyytsev</h3>
         <address>
             <p><b>Phone: </b>xxx</p>
@@ -102,4 +149,5 @@
         </div>
     </footer>
 </body>
+
 </html>
