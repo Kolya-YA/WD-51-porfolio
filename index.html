@@ -47,10 +47,10 @@
     </header>
 
     <main class="main">
-        <section class="main__about" id="about">
-            <div class="wrapper about flex flex-col md:flex-row-reverse gap-4 p-4">
-                <div class="about__main flex-2">
-                    <h2>My name</h2>
+        <section class="mb-6" id="about">
+            <div class="flex flex-col md:flex-row-reverse gap-4 p-4">
+                <div class="about__main basis-3/4 ">
+                    <h2 class="text-3xl text-gray-800 font-semibold mb-2">About me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Quis sapiente adipisci culpa.
                         Molestiae harum dolor ea doloribus temporibus
@@ -73,21 +73,19 @@
                         laudantium. Ut, facilis velit repudiandae esse
                         sint explicabo itaque?</p>
                 </div>
-                <div class="about__aside flex-1">
-                    <figure>
-                        <img src="oficial photo" alt="Portrait">
-                        <ul>
-                            <li>Occupation</li>
-                            <li>Location</li>
-                            <li>Something else</li>
-                        </ul>
-                    </figure>
+                <div class="about__aside basis-1/4">
+                    <img class="mx-auto" src="./images/portrait.png" alt="Portrait" width="200" height="200">
+                    <ul class="p-4 bg-gray-200">
+                        <li>Occupation</li>
+                        <li>Location</li>
+                        <li>Something else</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="main__skills" id="skills">
+        <section class="mb-6" id="skills">
             <div class="wrapper skills">
-                <h2>Skills</h2>
+                <h2 class="text-3xl text-gray-800 font-semibold mb-2">Skills</h2>
                 <ul class="skills__list">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -96,7 +94,7 @@
                     <li>GitHub</li>
                     <li>Markdown</li>
                     <li>Agile</li>
-                    <li>Skill #008</li>
+                    <li>Tailwind CSS</li>
                     <li>Skill #009</li>
                     <li>Skill #010</li>
                     <li>Skill #011</li>
@@ -104,8 +102,8 @@
                 </ul>
             </div>
         </section>
-        <section class="main__projects" id="portfolio">
-            <h2>My projects</h2>
+        <section class="mb-8" id="portfolio">
+            <h2 class="text-3xl text-gray-800 font-semibold mb-2">My projects</h2>
             <ul class="projects__list">
                 <li>
                     <div class="wrapper projects__item">Project #001
